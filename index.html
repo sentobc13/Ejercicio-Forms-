@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>El Club Viejuner</h2>
+
+    <form>
+        <fieldset>
+            <legend>Tú</legend>
+        <label for="nombre"><b>Nombre:</b></label><br>
+        <input type="text" id="nombre" name="nombre" placeholder="texto" autofocus required><br>
+        <label for="apellido"><b>Apellido:</b></label><br>
+        <input type="text" id="apellido" name="apellido" placeholder="texto" required><br>
+        <label for="age"><b>Edad:</b></label><br>
+        <input type="number" id="age" name="Edad" min="0" max="150" required><br><br>
+        <label for="sexo"><b>Sexo</b></label><br>
+        <input type="radio" id="sexo" name="sexo" value="Masculino">
+        <label for="sexo">Masculino</label><br>
+        <input type="radio" id="sexo" name="sexo" value="Femenino">
+        <label for="sexo">Femenino</label><br>
+        <input type="radio" id="sexo" name="sexo" value="No especificar">
+        <label for="sexo">No especificar</label><br><br>
+        <label for="me siento viejuner"><b>Me siento viejuner</b></label><br>
+        <input type="checkbox" id="si" name="si" value="si">
+        <label for="si">Si</label><br>
+        <input type="checkbox" id="no" name="no" value="no">
+        <label for="no">No</label><br><br>
+        <label for="escribe algo sobre ti"><b>Escribe algo sobre ti</b></label><br>
+        <textarea name="mensaje" rows="3" cols="20"></textarea><br><br>
+        <legend>Tus circunstancias</legend><br>
+        <label for="correo"><b>Correo elcetrónico:</b></label><br>
+        <input type="email" id="email" name="email" required><br>
+        <label for="telefono"><b>Número de teléfono:</b></label><br>
+        <input type="tel" id="telefono" name="telefono" required><br><br>
+
+        <input type="submit" value="Submit">
+        <input type="reset" value="Reset">
+    </fieldset></form><br><br>
+
+    <h2>Los ladronzuelos de bicicletas</h2>
+
+    <form>
+        <fieldset>
+            <label for="dia"><b>Fecha</b></label>
+            <input type="date" id="dia" name="dia" requested><br>
+            <label for="hora"><b>Hora</b></label>
+            <input type="time" name="hora" id="hora" requested><br>
+            <label for="color"><b>Color de la bicicleta</b></label>
+            <input type="color" value="#ff5678"><br>
+            <label for="precio"><b>Rango de precio</b></label>
+            <input type="range" id="precio" name="precio" min="0" max="3000"><br>
+            <label for="bicicleta"><b>Tipo de bicicleta</b></label>
+            <select id="bicicleta" name="bicicleta">
+                <option value="paseo">Paseo</option>
+                <option value="montaña">Montaña</option>
+                <option value="carreras">Carreras</option>
+                <!-- falta hacer el desglose de select, no se como -->
+              </select><br>
+              <label for="accesorios"><b>Accesorios</b></label><br>
+              <input type="checkbox" id="accesorios" name="accesorios" value="accesorios">
+              <label for="ruedines">Ruedines</label><br>
+              <input type="checkbox" id="accesorios" name="accesorios" value="accesorios">
+              <label for="pegatinas">Pegatinas</label><br>
+              <input type="checkbox" id="accesorios" name="accesorios" value="accesorios">
+              <label for="cestita">Cestita</label><br>
+              <input type="checkbox" id="accesorios" name="accesorios" value="accesorios">
+              <label for="bomba de aire">Bomba de aire</label><br>              <input type="checkbox" id="accesorios" name="accesorios" value="accesorios">
+              <label for="timbre">Timbre</label><br>
+              <input type="checkbox" id="accesorios" name="accesorios" value="accesorios">
+              <label for="foco">Foco</label><br><br>
+            <label for="marcas"><b>¿Qué marca era?</b></label>
+            <input list="marcas">
+            <datalist id="marcas">
+                <option value="specialized"></option>
+                <option value="trek"></option>
+                <option value="merida"></option>
+                <option value="scott"></option>
+                <option value="giant"></option>
+                <option value="cube"></option>
+                <option value="lapierre"></option>
+                <option value="orbea"></option>
+                <option value="cannondale"></option>
+                <option value="bmc"></option>
+                <option value="canyon"></option>
+                <option value="look"></option>
+                <option value="protek"></option>
+                <option value="megamo"></option>
+                <option value="pinarello"></option>
+                <option value="bianchi"></option>
+                <option value="bh"></option>
+                <option value="factor"></option>
+                <option value="ghost"></option>
+                <option value="cervélo"></option>
+                <option value="argon"></option>
+            </datalist><br><br>
+            <input type="submit" value="Submit">
+            <input type="reset" value="Reset">
+        </fieldset>
+    </form>
+</body>
+</html>
